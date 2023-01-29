@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Vokabel Trainer</title>
+	</head>
+	<body>
+		<h1>Vokabel Trainer</h1>
+		<div id="app">
+			<form>
+				<p>Deutsches Wort: <b id="word_de"></b></p>
+
+				<label for="word_en">Übersetzung auf Englisch:</label>
+				<input type="text" id="word_en" autocomplete="off" />
+				<div>
+					<button type="submit">Prüfen</button>
+				</div>
+			</form>
+			<div id="result"></div>
+			<button id="next_btn" style="display: none">
+				Anderes Wort
+			</button>
+		</div>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>
