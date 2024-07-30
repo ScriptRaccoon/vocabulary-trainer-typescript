@@ -37,18 +37,18 @@ function display_next_word() {
 	result.innerHTML = ""
 	next_btn.style.display = "none"
 	current_word = get_random_word()
-	word_de.innerText = current_word["de"]
+	word_de.innerText = current_word.de
 	word_en.value = ""
 	word_en.focus()
 }
 
 // show the result (if guess was correct) in HTML
 function show_result() {
-	const correct_word = current_word["en"]
+	const correct_word = current_word.en
 	const is_correct = word_en.value.trim() == correct_word
 	const result_text = is_correct
 		? "Das ist richtig!"
-		: "Das ist nicht richtig. Die richtige Übersetzung lautet: " + `<b>${correct_word}</b>`
+		: `Das ist nicht richtig. Die richtige Übersetzung lautet: <b>${correct_word}</b>`
 	result.innerHTML = result_text
 	next_btn.style.display = "inline"
 	next_btn.focus()
