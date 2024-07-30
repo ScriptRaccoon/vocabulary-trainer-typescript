@@ -1,10 +1,10 @@
-export type vocable = {
-	de: string;
-	en: string;
-};
+export type word = {
+	de: string
+	en: string
+}
 
 // an interface also works:
-// export interface vocable {
+// export interface word {
 // 	de: string;
 // 	en: string;
 // }

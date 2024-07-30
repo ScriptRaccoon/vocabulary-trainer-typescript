@@ -1,6 +1,6 @@
-import { vocable } from "./types";
+import type { word } from "./types"
 
-export const vocables: vocable[] = [
+export const words: word[] = [
 	{ de: "Pferd", en: "horse" },
 	{ de: "sowieso", en: "anyway" },
 	{ de: "Straße", en: "street" },
@@ -29,4 +29,4 @@ export const vocables: vocable[] = [
 	{ de: "schnell", en: "fast" },
 	{ de: "unsicher", en: "insecure" },
 	{ de: "selbstbewusst", en: "confident" },
-];
+]
